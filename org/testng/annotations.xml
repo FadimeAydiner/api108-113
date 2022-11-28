@@ -1,0 +1,14 @@
+<root>
+    <item name='org.testng.AssertJUnit void assertFalse(boolean)'>
+        <annotation name='org.jetbrains.annotations.Contract'>
+            <val name="value" val="&quot;true -&gt; fail&quot;"/>
+            <val name="pure" val="true"/>
+        </annotation>
+    </item>
+    <item name='org.testng.AssertJUnit void assertTrue(boolean)'>
+        <annotation name='org.jetbrains.annotations.Contract'>
+            <val name="value" val="&quot;false -&gt; fail&quot;"/>
+            <val name="pure" val="true"/>
+        </annotation>
+    </item>
+</root>
