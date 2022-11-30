@@ -50,7 +50,7 @@ public class Get11 extends GoRestBaseUrl {
                         "meta.pagination.links.current", equalTo("https://gorest.co.in/public/v1/users?page=1"),
                         "data.name", hasSize(10),
                         "data.status", hasItem("active"),
-                        "data.name",hasItems("Shubhaprada Kocchar", "Lavanya Nehru", "Chandak Khanna CPA"));
+                        "data.name",hasItems("Purushottam Chattopadhyay", "Advaya Khan", "Menka Gill"));
 
 
         //The female users are less than or equal to male users
