@@ -12,7 +12,12 @@
         <maven.compiler.source>15</maven.compiler.source>
         <maven.compiler.target>15</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <user.language>tr</user.language>
+        <argLine>-Duser.language=${user.language}</argLine>
     </properties>
+
+
+
 
     <dependencies>
         <dependency>
@@ -20,6 +25,7 @@
             <artifactId>rest-assured</artifactId>
             <version>4.3.0</version>
         </dependency>
+
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
@@ -47,5 +53,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
 
 </project>

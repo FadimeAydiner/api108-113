@@ -12,10 +12,20 @@ public class JsonPlaceHolderTestData {
                  "completed": false
               }*/
         Map<String,Object> expectedData=new HashMap<>();
-        expectedData.put("userId",userId);
-        expectedData.put("title",title);
-        expectedData.put("completed", completed);
+        if(userId!=null) expectedData.put("userId",userId);
+        if(title!=null) expectedData.put("title",title);
+        if(completed!=null) expectedData.put("completed", completed);
 
         return  expectedData;
+    }
+
+    public String expectedDataInString (Integer userId,String title,Boolean completed){
+        String expectedData ="{\n" +
+                "    \"userId\": "+userId+",\n" +
+                "    \"title\": \""+title+"\",\n" +
+                "    \"completed\": "+completed+"\n" +
+                "  }";
+
+        return expectedData;
     }
 }
