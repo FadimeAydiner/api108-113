@@ -1,5 +1,8 @@
 package Pojos;
 
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+
+
 public class BookingResponseBodyPojo {
     private Integer bookingid;
     private BookingPojo booking;
