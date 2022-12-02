@@ -34,10 +34,10 @@ public class Get16 extends HerOkuAppBaseUrl {
     @Test
     public void get16(){
         //Set the url
-        spec.pathParams("first","booking","second", 555);
+        spec.pathParams("first","booking","second", 5247);
 
         //set the expected data
-        String expectedDataInString=new HerOkuAppTestData().expectedDataInString("Josh","Allen",111,true,"2018-01-01","2019-01-01","superb owls");
+        String expectedDataInString=new HerOkuAppTestData().expectedDataInString("Josh","Allen",111,true,"2018-01-01","2019-01-01","super bowls");
         BookingPojo expectedData=JsonUtils.convertJsonToJavaObject(expectedDataInString, BookingPojo.class);
         System.out.println(expectedData);
 
